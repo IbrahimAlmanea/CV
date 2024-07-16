@@ -1,0 +1,26 @@
+.head {
+	background-color: darkred;
+	height: 250px;
+    text-align: center;
+    padding: 20px;
+}
+
+.head-name {
+	color:  white;
+	font: italic;
+	font-size: 50px;
+	margin: auto;
+}
+
+.head-statment {
+	color: white;
+	font: italic;
+	font-size: 40px;
+	margin: auto;
+}
+
+.head-image {
+	width: 150px;
+	border-radius: 30px;
+	margin: auto;
+}
