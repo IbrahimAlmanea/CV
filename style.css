@@ -247,10 +247,10 @@ body {
 	}
 }
 
-@media only screen and (max-width: 768px) {
+@media(max-width: 768px) {
 
 	.head-name {
-		font-size: 30px;
+		font-size: 10px;
 	}
 
 	.head-statment {
