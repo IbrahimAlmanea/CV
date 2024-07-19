@@ -332,11 +332,11 @@ body {
 @media only screen and (max-width: 600px) {
 
 	.head-name {
-		font-size: 20px;
+		font-size: 10px;
 	}
 
 	.head-statment {
-		font-size: 15px;
+		font-size: 5px;
 	}
 
 	.foot {
