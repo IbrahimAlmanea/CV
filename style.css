@@ -410,3 +410,117 @@ body {
 		font-size: 20px;
 	}
 }
+
+ @media (prefers-color-scheme: dark) {
+
+	body {
+		background-color: black;	}
+
+	.head {
+		background-color: black;
+	}
+
+	.head-name {
+		color: white;
+	}
+
+	.head-statment {
+		color: white;
+	}
+
+	.foot {
+		background-color: black;
+	}
+
+	.info {
+		background-color: black;
+	}
+
+	.info-header {
+		color: white;
+	}
+
+	.info-phone-var {
+		color: white;
+	}
+
+	.info-E-mail-var {
+		color: white;
+	}
+
+	.info-phone-value {
+		color: white;
+	}
+
+	.info-E-mail-value {
+		color: white;
+	}
+
+	.form {
+		background-color: black;
+	}
+
+	.form-header {
+		color: white;
+	}
+
+	.form-fname-lable {
+		color: white;
+	}
+
+	.form-lname-lable {
+		color: white;
+	}
+
+	.form-email-lable {
+		color: white;
+	}
+
+	.form-subject-lable {
+		color: white;
+	}
+
+	.form-msg-lable {
+		color: white;
+	}
+
+	.mid {
+		background-color: black;
+	}
+
+	.mid-edu-header {
+		color: white;
+	}
+
+	.mid-edu-n {
+		color: white;
+	}
+
+	.mid-edu-discribtion {
+		color: white;
+	}
+
+	.mid-exp {
+		background-color:  black;
+	}
+
+	.mid-exp-header {
+		color: white;
+	}
+
+	.mid-exp-n {
+		color: white;
+	}
+
+	.mid-exp-discribtion {
+		color: white;
+	}
+
+	.mid-skills-header {
+		color: white;
+	}
+
+	.mid-skills-list {
+		color: white;
+	}
+}
