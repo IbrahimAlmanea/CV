@@ -1,26 +1,330 @@
+body {
+	background-color: #E5E4EF;
+}
+
 .head {
-	background-color: darkred;
-	height: 250px;
+	background-color: #03045e;
+	height: auto;
     text-align: center;
     padding: 20px;
 }
 
 .head-name {
-	color:  white;
-	font: italic;
+	color: white;
 	font-size: 50px;
 	margin: auto;
 }
 
 .head-statment {
 	color: white;
-	font: italic;
 	font-size: 40px;
 	margin: auto;
+	animation-name: slideinright;
+	animation-duration: 1s;
 }
 
 .head-image {
 	width: 150px;
 	border-radius: 30px;
 	margin: auto;
+	animation-name: slideinleft;
+	animation-duration: 1s;
+}
+
+.foot {
+	background-color: #a9a9a9;
+	height: auto;
+	display: flex;
+}
+
+.info {
+	background-color: lightcyan;
+	height: auto;
+	width: 50%;
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-template-rows: auto auto auto;
+	justify-content: space-evenly;
+}
+
+.info-header {
+	grid-column: 1/ span 2;
+	grid-row: 1;
+	font-size: 40px;
+	font-weight: bold;
+}
+
+.info-phone-var {
+	grid-column: 1;
+	grid-row: 2;
+	font-size: 30px;
+}
+
+.info-E-mail-var {
+	grid-column: 1;
+	grid-row: 3;
+	font-size: 30px;
+}
+
+.info-phone-value {
+	grid-column: 2;
+	grid-row: 2;
+	font-size: 30px;
+}
+
+.info-E-mail-value {
+	grid-column: 2;
+	grid-row: 3;
+	font-size: 30px;
+}
+
+.form {
+	background-color: lightblue;
+	height: auto;
+	width: 50%;
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-template-rows: auto auto auto auto auto auto auto auto 100px auto;
+	justify-content: space-evenly;
+	align-content: space-evenly;
+}
+
+.form-header {
+	grid-column: 1/ span 2;
+	grid-row: 1;
+	font-size: 40px;
+	font-weight: bold;
+}
+
+.form-fname-lable {
+	grid-column: 1;
+	grid-row: 2;
+	font-size: 30px;
+}
+
+.form-lname-lable {
+	grid-column: 2;
+	grid-row: 2;
+	font-size: 30px;
+}
+
+.form-fname-input {
+	grid-column: 1;
+	grid-row: 3;
+	font-size: 20px;
+}
+
+.form-lname-input {
+	grid-column: 2;
+	grid-row: 3;
+	font-size: 20px;
+}
+
+.form-email-lable {
+	grid-column: 1/ span 2;
+	grid-row: 4;
+	font-size: 30px;
+}
+
+.form-email-input {
+	grid-column: 1/ span 2;
+	grid-row: 5;
+	font-size: 20px;
+}
+
+.form-subject-lable {
+	grid-column: 1/ span 2;
+	grid-row: 6;
+	font-size: 30px;
+}
+
+.form-subject-input {
+	grid-column: 1/ span 2;
+	grid-row: 7;
+	font-size: 20px;
+}
+
+.form-msg-lable {
+	grid-column: 1/ span 2;
+	grid-row: 8;
+	font-size: 30px;
+}
+
+.form-msg-input {
+	resize: none;
+	grid-column: 1/ span 2;
+	grid-row: 9;
+	font-size: 20px;
+}
+
+.form-submit {
+	width: 20%;
+	grid-column: 1/ span 2;
+	grid-row: 10;
+	font-size: 20px;
+	margin-left: 40%;
+	margin-top: 10px;
+}
+
+.mid {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.mid-edu {
+	width: 33%;
+	animation-name: slideinleft;
+	animation-duration: 1s;
+}
+
+.mid-edu-header {
+	font-size: 40px;
+}
+
+.mid-edu-n {
+	font-size: 20px;
+	font-weight: bold;
+	margin-left: 20px;
+}
+
+.mid-edu-discribtion {
+	font-size: 20px;
+	margin-left: 50px;
+}
+
+.mid-exp {
+	width: 33%;
+	background-color: white;
+}
+
+.mid-exp-header {
+	font-size: 40px;
+}
+
+.mid-exp-n {
+	font-size: 20px;
+	font-weight: bold;
+	margin-left: 20px;
+}
+
+.mid-exp-discribtion {
+	font-size: 20px;
+	margin-left: 50px;
+}
+
+.mid-skills {
+	width: 33%;
+	animation-name: slideinright;
+	animation-duration: 1s;
+}
+
+.mid-skills-header {
+	font-size: 40px;
+}
+
+.mid-skills-list {
+	font-size: 20px;
+	margin-left: 50px;
+}
+
+@keyframes slideinleft {
+	from {
+		transform: translateX(-100px);
+	}
+
+	to {
+		transform: translateX(0px);
+	}
+}
+
+@keyframes slideinright {
+	from {
+		transform: translateX(100px);
+	}
+
+	to {
+		transform: translateX(0px);
+	}
+}
+
+@media only screen and (max-width: 768px) {
+
+	.head-name {
+		font-size: 30px;
+	}
+
+	.head-statment {
+		font-size: 20px;
+	}
+
+	.foot {
+		display: initial;
+	}
+
+	.info {
+		width: 100%;
+	}
+
+	.info-header {	
+		font-size: 30px;
+	}
+
+	.info-phone-var,
+	.info-E-mail-var,
+	.info-phone-value,
+	.info-E-mail-value {
+		font-size: 20px;
+	}
+
+	.form {
+		width: 100%;
+	}
+
+	.form-header {
+		font-size: 30px;
+	}
+
+	.form-fname-lable,
+	.form-lname-lable,
+	.form-email-lable,
+	.form-subject-lable,
+	.form-msg-lable {
+		font-size: 20px;
+	}
+
+	.form-fname-input,
+	.form-lname-input,
+	.form-email-input,
+	.form-subject-input,
+	.form-msg-input {
+		font-size: 15px;
+	}
+
+	.form-submit {
+		font-size: 15px;
+	}
+
+	.mid {
+		display: initial;
+	}
+
+	.mid-edu,
+	.mid-exp,
+	.mid-skills {
+		width: 100%;
+	}
+
+	.mid-edu-header,
+	.mid-exp-header,
+	.mid-skills-header {
+		font-size: 30px;
+	}
+
+	.mid-edu-n,
+	.mid-exp-n,
+	.mid-edu-discribtion,
+	.mid-exp-discribtion,
+	.mid-skills-list {
+		font-size: 20px;
+	}
 }
